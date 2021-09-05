@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Developers Life</string>
+    <string name="gif_description">Gif</string>
+    <string name="next_button_description">Next</string>
+    <string name="try_again">Повторить</string>
+    <string name="cloud">Cloud</string>
+    <string name="loadingError">Произошла ошибка при загрузке данных. Проверьте подключение к сети.</string>
+    <string name="tab_latest">Последние</string>
+    <string name="tab_top">Лучшие</string>
+    <string name="tab_hot">Горячие</string>
+</resources>
