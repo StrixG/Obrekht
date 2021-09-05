@@ -72,18 +72,15 @@ public class PostFragment extends Fragment {
         circularProgress.setColorSchemeColors(requireContext().getColor(R.color.blue));
         circularProgress.start();
 
-
-
-        viewModel.post.observe(getViewLifecycleOwner(), post -> {
+        viewModel.getRandomPost().observe(getViewLifecycleOwner(), post -> {
             if (post == null) {
                 setErrorVisible(true);
             } else {
+                setErrorVisible(false);
                 loadPost(post);
             }
-            binding.backButton.setEnabled(viewModel.getCurrentPostIndex() != 0);
+            binding.backButton.setEnabled(viewModel.getCurrentPostIndex() > 0);
         });
-
-        viewModel.loadNextGif();
     }
 
     @Override
